@@ -5,7 +5,8 @@ print(result)
 
 #the last couple of characters are '==' ... it looks a base64
 import base64
-decoded = base64.b64decode(result).decode('ascii')
+decoded = base64.b64decode(result).decode('ascii') 
+#version2: decoded = base64.b64decode(result).decode('utf-8', errors="ignore")
 print(decoded)
 
 #the output is a morse code
