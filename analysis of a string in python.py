@@ -11,3 +11,8 @@ for c in puzzle:
 
 sorted_x = sorted(chr2freq.items(), key=lambda kv: kv[1], reverse = True)
 print(sorted_x)
+
+#change a character and print the string 
+voc = {'T': 'M'}
+dec = ''.join(c if c not in voc else voc[c] for c in puzzle)
+print(dec)
