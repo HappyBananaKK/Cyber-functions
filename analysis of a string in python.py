@@ -1,5 +1,7 @@
 puzzle = "THIS IS AN EXAMPLE!"
 
+puzzle = puzzle.replace(' ', '') #remove additional spaces
+
 chr2freq = {}
 for c in puzzle:
     if c not in chr2freq:
