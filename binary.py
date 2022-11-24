@@ -12,3 +12,6 @@ def binary2string(text):
      return int(str(n),2)
   
     #example 3 print(binary2int("01010011")) ->83
+    
+ def int2Binary(n):    
+    return format(n,'b')
